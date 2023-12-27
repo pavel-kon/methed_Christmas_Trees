@@ -1,0 +1,13 @@
+.header {
+	background-color: gray;
+	padding: 100px 0;
+	font-size: 38px;
+	text-align: center;
+}
+
+@media (width < 1200px) {
+	.header {
+		background-color: #e4e455;
+
+	}
+}

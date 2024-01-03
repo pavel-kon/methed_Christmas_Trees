@@ -1,19 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="preload"
+      href="./fonts/cormorant-v11-latin_cyrillic-700.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin />
     <link href="./css/main.css" rel="stylesheet" />
     <script src="./js/index.bundle.js" defer></script>
-    <title>Main Page</title>
+    <title>Christmas Trees</title>
   </head>
   <body>
-    <h1>Index.html</h1>
-    @@include('./blocks/nav.html') @@include('./blocks/header.html')
+    @@include('./blocks/header.html')
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1>Встречай Новый Год с прекрасной живой ёлочкой!</h1>
+        </div>
+      </section>
+      <section class="features">
+        <div class="container"></div>
+      </section>
+      <section class="product" id="one">
+        <div class="container"></div>
+      </section>
+      <section class="product" id="two">
+        <div class="container"></div>
+      </section>
+      <section class="product" id="three">
+        <div class="container"></div>
+      </section>
+      <section class="pay">
+        <div class="container"></div>
+      </section>
+    </main>
+
     @@include('./blocks/footer.html')
-
-    <input type="date" id="date" autocomplete="off" />
-
-    <img width="200" src="./img/01.jpg" alt="Photo" />
   </body>
 </html>

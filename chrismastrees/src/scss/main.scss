@@ -1,5 +1,8 @@
 // @import "./blocks/header";
 // @import "./blocks/footer";
+@import "./normalize";
+@import "./default";
+
 @import "./blocks/*.scss";
 
 // @import "vars/**/*.scss";

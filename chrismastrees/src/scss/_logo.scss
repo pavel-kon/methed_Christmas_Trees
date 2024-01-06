@@ -3,6 +3,11 @@
 	height: 76px;
 	color: var(--main-bg-color);
 
+	@media only screen and (width < 37.5em) { //600px
+			// width: 73px;
+			// height: 35px;
+	}
+
 	&__second {
 		color: var(--main-color);
 
@@ -13,3 +18,4 @@
 // .logo__second {
 // 	color: var(--main-color);
 // }
+

@@ -20,6 +20,11 @@
 	--container: 129rem;
 
 	box-sizing: border-box;
+
+	--url-features-1: url("../img/tree.svg");
+	--url-features-2: url("../img/christmas-decorations.svg");
+	--url-features-3: url("../img/flowers.svg");
+	--url-features-4: url("../img/delivery-truck.svg");
 }
 
 *, *::after, *::before {
@@ -65,6 +70,17 @@ h1, h2, h3, p {
 
 .hide {
 	display: none;
+}
+
+.visually-hidden {
+	position: absolute;
+	clip: rect(1px, 1px, 1px, 1px);
+	padding: 0;
+	margin: 0;
+	border: 0;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
 }
 
 a {

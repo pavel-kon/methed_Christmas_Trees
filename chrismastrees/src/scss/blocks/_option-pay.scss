@@ -1,0 +1,44 @@
+.option-pay {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+
+	&__picture-wrapper {
+		background-color: var(--main-color);
+		padding: 18px 10px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-basis: 146px;
+		flex-grow: 1;
+		// box-sizing: border-box;
+		
+		margin-bottom: 1em;
+		@media only screen and (max-width: 1200px) {
+			flex-basis: 106px;
+			width: 100%;
+		}
+	}
+
+	&__picture {
+		// flex-basis: 80%;
+	}
+	
+	
+	&__title {
+		font-size: 1.333em;
+		margin-bottom: 0.5em;
+	}
+	
+	&__descr {
+	}
+}
+
+svg.logo.option-pay__picture {
+	@media only screen and (max-width: 1200px) {
+		flex-basis: 106px;
+		height: auto;
+		aspect-ratio: 2;
+	}
+	
+}

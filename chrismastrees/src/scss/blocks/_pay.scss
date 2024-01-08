@@ -1,0 +1,41 @@
+.pay {
+	background-color: var(--second-bg-color);
+	color: var(--main-color);
+	font-size: clamp(0.6667em, 0.4vw + 0.583em, 1em);
+	padding: 3.333em 0 4.444em;
+
+	&__container {
+	}
+
+	&__title {
+		font-family: Cormorant serif;
+		font-size: 3.8889em;
+		font-weight: 700;
+		line-height: 1.1;
+		letter-spacing: .01em;
+		margin-bottom: 0.6857em;
+	}
+
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		@media only screen and (max-width: 37.5em) {
+				flex-direction: column;;
+				gap: 20px;
+		}
+	}
+	
+	&__item {
+		flex-basis: 31.78%;
+		@media only screen and (max-width: 37.5em) {
+			min-width: 210px;
+			width: 90%;
+			margin-inline: auto;
+		}
+	}
+
+	&__option-pay {
+	}
+}
+
+

@@ -1,7 +1,99 @@
 .footer {
-	background-color: rgb(4, 5, 94);
-	padding: 100px 0;
-	font-size: 38px;
-	color: aliceblue;
-	text-align: center;
+	background-color: var(--second-color);
+	color: var(--main-color);
+	padding: 4.444em 0 4.8em;
+	font-size: clamp(0.6em, 0.42vw + 0.614em, 1em);
+
+	&__container {
+		display: grid;
+		grid-template-columns: 4fr 5fr 3fr;
+		gap: 4em 2em;
+		@media only screen and (width < 66.7em) {
+			grid-template-columns: repeat(3, 1fr);
+		}
+		@media only screen and (width < 50em) {
+			grid-template-columns: 4fr 5fr 4fr;
+			gap: 2em 1em;
+		}
+		@media only screen and (width < 37.5em) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+		@media only screen and (width < 28em) {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	&__logo {
+		@media only screen and (width < 37.5em) {
+			order: -1;
+		}
+	}
+
+	&__contacts {
+		font-size: 1.3333em;
+		line-height: 1.4;
+		letter-spacing: 0.04em;
+
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		@media only screen and (width < 28em) {
+			order: -1;
+		}
+	}
+
+	&__item {
+		&:not(:last-child) {
+			margin-bottom: 0.8333em;
+		}
+	}
+
+	&__link {
+		transition: color 0.3s ease-in-out;
+		&:hover {
+			color: var(--second-bg-color);
+		}
+
+		&_social {
+			display: block;
+			width: 2.222em;
+			height: 2.222em;
+			@media only screen and (width < 50em) {
+				width: 2em;
+				height: 2em;
+			}
+		}
+	}
+
+	&__list-social {
+		display: flex;
+		align-items: start;
+		gap: 10px;
+		@media only screen and (width < 37.5em) {
+			order: -1;
+		}
+	}
+
+	&__item-social {
+		flex: 0 1 60px;
+		@media only screen and (width < 66.7em) {
+			flex: 0 1 40px;
+		}
+		@media only screen and (width < 50em) {
+			flex: 0 1 30px;
+		}
+	}
+
+	&__info-list {
+	}
+
+	&__rules-list {
+		@media only screen and (width < 28em) {
+			order: -1;
+		}
+	}
+
+	&__team {
+	}
 }
+

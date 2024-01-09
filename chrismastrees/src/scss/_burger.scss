@@ -1,7 +1,58 @@
 .burger {
 	display: none;
+	position: relative;
+	--width: 21px;
+	--height: 14px;
+	--size-line: 2px;
+	--color: var(--main-bg-color);
+	width: var(--width);
+	height: var(--height);
+	cursor: pointer;
+	background-color: transparent;
+	border: 0;
+
+	&__line {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 50%;
+		transform: translate(0, -50%);
+		background-color: var(--color);
+		height: var(--size-line);
+	}
+
+	&::before, &::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 0;
+		background-color: var(--color);
+		height: var(--size-line);
+		transition: transform 0.3s ease-in;
+	}
+	&::before {
+		top: 0;
+	}
+	&::after {
+		bottom: 0;
+	}
+
+	&_active &__line {
+		transform: scale(0);
+	}
+
+	&_active::before {
+		top: 50%;
+		transform: rotate(-45deg);
+	}
+	&_active::after {
+		top: 50%;
+		transform: rotate(45deg);
+	}
 
 	@media only screen and (width < 56.25em) { //900px
-			display: block;
+		display: block;	
+		--height: 12px;
+		--width: 18px;
 	}
 }

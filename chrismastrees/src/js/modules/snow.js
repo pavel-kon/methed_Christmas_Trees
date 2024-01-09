@@ -56,4 +56,4 @@ const createSnow = (min, max, saturation) => {
 
   setInterval(createSnowItem, saturation);
 };
-createSnow(5, 20, 500);
+export default createSnow;

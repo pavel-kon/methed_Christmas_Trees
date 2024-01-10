@@ -2,6 +2,7 @@ import hello from './modules/hello';
 import garlandInit from './modules/garland';
 import createSnow from './modules/snow';
 import './modules/burger';
+import './modules/modal';
 import AirDatepicker from 'air-datepicker';
 import 'air-datepicker/air-datepicker.css';
 

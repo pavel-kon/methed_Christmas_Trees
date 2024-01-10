@@ -1,0 +1,16 @@
+.overlay {
+	position: fixed;
+	z-index: 1000;
+	overflow-y: auto;
+	inset: 0;
+	background-color: rgba(0, 0, 0, .5);
+	padding: 10px;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	font-size: .8888888em;
+
+	&_active {
+		display: flex;
+	}
+}
